@@ -47,6 +47,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "control"], "q", lazy.shutdown()),
     ([mod], "r", lazy.spawncmd()),
 
+    #Poweroff system
+    ([mod], "p", lazy.spawn("poweroff")),
+
     # ------------ App Configs ------------
 
     #Backgorund
@@ -68,6 +71,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
 
+    # Open Microsoft Teams
+    ([mod], "t", lazy.spawn("teams")),
+
     # Redshift
     ([mod], "r", lazy.spawn("redshift -O 2400")),
     ([mod, "shift"], "r", lazy.spawn("redshift -x")),
@@ -76,6 +82,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "s", lazy.spawn("scrot")),
     ([mod, "shift"], "s", lazy.spawn("scrot -s")),
 
+    #Clipboard
+    ([mod], "v", lazy.spawn("copyq toggle")),
     # ------------ Hardware Configs ------------
 
     # Volume
