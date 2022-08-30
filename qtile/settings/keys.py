@@ -48,7 +48,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "r", lazy.spawncmd()),
 
     #Poweroff system
-    ([mod], "p", lazy.spawn("poweroff")),
+    ([mod, "control"], "p", lazy.spawn("poweroff")),
 
     # ------------ App Configs ------------
 
