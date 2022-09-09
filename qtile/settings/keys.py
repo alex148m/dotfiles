@@ -54,7 +54,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     #Backgorund
 
-    ([mod], "b", lazy.spawn("feh --bg-scale /home/alex/Imagenes/ubuntu-1.png")),
+    # Volumne Control
+    ([mod, "shift"], "v", lazy.spawn("pavucontrol")),
 
     # Menu
     ([mod], "m", lazy.spawn("rofi -show drun")),
