@@ -48,7 +48,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "r", lazy.spawncmd()),
 
     #Poweroff system
-    ([mod, "control"], "p", lazy.spawn("poweroff")),
+    ([mod, "control"], "p", lazy.spawn("/bin/bash /home/alex/.config/rofi/powermenu/type-1/powermenu.sh")),
 
     # ------------ App Configs ------------
 
